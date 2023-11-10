@@ -1,0 +1,12 @@
+import 'dart:io';
+
+void main() {
+  stdout.write("Maqsut: ");
+  var name = _readLine();
+  stdout.write("$name. Narikbayev: ");
+  var surname = _readLine();
+  stdout.write("$surname. Economics: ");
+  var faculty = _readLine();
+
+  print("Nice to meet you at $faculty faculty, Dr. $name $surname.");
+}
