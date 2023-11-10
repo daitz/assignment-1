@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main() {
-  stdout.write("Enter a number: ");
+  stdout.write("10: ");
   var number = int.parse(_readLine());
 
   if (number > 0) {
