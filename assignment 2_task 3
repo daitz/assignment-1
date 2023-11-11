@@ -1,0 +1,7 @@
+
+b = int(input("1 : "))
+h = int(input("1 : "))
+
+area = b * h / 2
+
+print("area = ", area)
