@@ -1,0 +1,7 @@
+main() {
+    var now = new DateTime.now();
+    var formatter = new DateFormat('2014-07-05');
+    String formattedDate = formatter.format(now);
+    print(formattedDate); 
+}
+
