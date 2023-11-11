@@ -1,12 +1,7 @@
 import 'dart:io';
 
-void main() {
-  stdout.write("1: ");
-  var b = int.parse(_readLine());
-  stdout.write("1: ");
-  var h = int.parse(_readLine());
-
-  area = b * h / 2
-
-  print("area = ", area);
+void main(List<String> args) {
+  var base = double.parse(stdin.readLineSync());
+  var height = double.parse(stdin.readLineSync());
+  print(0.5*base*height);
 }
