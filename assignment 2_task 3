@@ -1,7 +1,15 @@
+import 'dart:io';
 
-b = int(input("1 : "))
-h = int(input("1 : "))
+void main() {
+  var b = int(input("1 : "))
+  var h = int(input("1 : "))
+  area = b * h / 2
 
-area = b * h / 2
-
-print("area = ", area)
+  print("area = ", area);
+}
+  stdout.write("Maqsut: ");
+  var name = _readLine();
+  stdout.write("$name. Narikbayev: ");
+  var surname = _readLine();
+  stdout.write("$surname. Economics: ");
+  var faculty = _readLine();
