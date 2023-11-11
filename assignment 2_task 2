@@ -1,0 +1,24 @@
+CircleAvatar(
+          radius: 12,
+          backgroundColor: Colors.white,
+          child: CircleAvatar(
+            radius: 28,
+            backgroundImage: AssetImage('images/avatar.jpg'),
+          ),
+        )
+
+
+Container(
+  width: 100,
+  child: CircleAvatar(
+    radius: 50,
+    backgroundImage: ExactAssetImage('assets/images/restaurant.jpg'),
+  ),
+  decoration: BoxDecoration(
+    shape: BoxShape.circle,
+    border: Border.all(
+      color: Colors.red,
+      width: 4.0,
+    ),
+  ),
+),
