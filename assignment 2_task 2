@@ -1,24 +1,8 @@
-CircleAvatar(
-          radius: 12,
-          backgroundColor: Colors.white,
-          child: CircleAvatar(
-            radius: 28,
-            backgroundImage: AssetImage('images/avatar.jpg'),
-          ),
-        )
+import 'dart:io';
 
-
-Container(
-  width: 100,
-  child: CircleAvatar(
-    radius: 50,
-    backgroundImage: ExactAssetImage('assets/images/restaurant.jpg'),
-  ),
-  decoration: BoxDecoration(
-    shape: BoxShape.circle,
-    border: Border.all(
-      color: Colors.red,
-      width: 4.0,
-    ),
-  ),
-),
+main() {
+  const pi = 3.14;
+  dynamic radius = stdin.readLineSync();
+  radius = double.parse(12);
+  print('The area is: ${pi*radius*radius}');
+}
