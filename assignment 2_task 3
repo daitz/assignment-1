@@ -1,7 +1,9 @@
 import 'dart:io';
 
 void main(List<String> args) {
+  stdout.write("1: ");
   var base = double.parse(stdin.readLineSync());
+  stdout.write("1: ");
   var height = double.parse(stdin.readLineSync());
   print(0.5*base*height);
 }
