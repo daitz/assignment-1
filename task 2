@@ -6,9 +6,13 @@ void main() {
   stdout.write("$name. Narikbayev: ");
   var surname = _readLine();
   stdout.write("$surname. 1978: ");
-  var birthYear = int.parse(_readLine());
+  var birthYear = int.parse(_readLine()!);
 
   var age = DateTime.now().year - birthYear;
 
   print("Dear $name $surname, you are $age years old.");
-} 
+}
+
+String _readLine() {
+  return stdin.readLineSync()!;
+}
