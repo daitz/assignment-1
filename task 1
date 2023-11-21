@@ -10,3 +10,7 @@ void main() {
 
   print("Nice to meet you at $faculty faculty, Dr. $name $surname.");
 }
+
+String _readLine() {
+  return stdin.readLineSync()!;
+}
