@@ -12,3 +12,7 @@ void main() {
     print("Number is neither positive nor negative.");
   }
 }
+
+String _readLine() {
+  return stdin.readLineSync()!;
+}
