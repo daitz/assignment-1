@@ -1,6 +1,5 @@
-main() {
-    var now = new DateTime.now();
-    var formatter = new DateFormat('2014-07-05');
-    String formattedDate = formatter.format(now);
-    print(formattedDate); 
+void main() {
+  var dateTime1 = DateTime.parse('2014-07-05 14:34:14');
+
+  print(dateTime1);
 }
