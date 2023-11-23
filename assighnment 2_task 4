@@ -1,12 +1,20 @@
 void main() {
-  int a=0;
-  int b=1;
-  print(a);
-  print(b);
-  for(int i=1;i<10; i++){
-    int c=a+b;
-    print(c);
-    a=b;
-    b=c;
+  int count = 5;
+
+  List<int> fibonacciNumbers = generateFibonacciNumbers(count);
+
+  print("How many Fibonacci numbers do you want? $count");
+  print(fibonacciNumbers);
+}
+
+List<int> generateFibonacciNumbers(int count) {
+  List<int> fibonacciNumbers = [];
+  for (int i = 0; i < count; i++) {
+    if (i < 2) {
+      fibonacciNumbers.add(1);
+    } else {
+      fibonacciNumbers.add(fibonacciNumbers[i - 1] + fibonacciNumbers[i - 2]);
+    }
   }
+  return fibonacciNumbers;
 }
