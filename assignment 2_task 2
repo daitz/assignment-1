@@ -1,8 +1,14 @@
 import 'dart:io';
 
-main() {
-  const pi = 3.14;
-  dynamic radius = stdin.readLineSync();
-  radius = double.parse(12);
-  print('The area is: ${pi*radius*radius}');
+void main() {
+  stdout.write("Enter the radius: ");
+  double radius = double.parse(stdin.readLineSync()!);
+
+  double area = calculateArea(radius);
+
+  print("The area is: $area");
+}
+
+double calculateArea(double radius) {
+  return 3.14159 * radius * radius;
 }
